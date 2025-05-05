@@ -1,1 +1,94 @@
-<p>footer works!</p>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro Footer</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<body>
+    
+    <div class="newsletter-section">
+        <div class="newsletter-container">
+            <div class="newsletter-left">
+                <i class="fa-solid fa-paper-plane"></i>
+                <div>
+                    <span class="newsletter-title">Sign up to Newsletter</span>
+                    <span class="newsletter-subtitle">    ...and receive <strong>$20 coupon for first shopping</strong></span>
+                </div>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" class="email-input" placeholder="Enter your email address">
+                <button type="submit" class="signup-button">SignUp</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <footer class="container-fluid">
+        <div class="row">
+            
+            <div class="col-lg-4">
+                
+                <div class="logo">
+                    <img src="https://cdn.dribbble.com/userupload/10256747/file/original-7f304565af23a58f4429f3a6554c0d6a.png?resize=1504x1128&vertical=center" alt="Electro">
+                </div>
+                
+                <div class="contact-phone">
+                    <p>Got Questions! Call us 24/7!</p>
+                    <span class="call-us-number">(800) 8001-8588, (0600) 874 548</span>
+                </div>
+                <div class="contact-address">
+                    <strong class="footer-address-title">Contact Info</strong>
+                    <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fas fa-rss"></i></a>
+                </div>
+            </div>
+
+            
+    <div class="col-lg-8">
+        <div class="row mt-5">
+
+            @for (item of menuData; track $index) {
+                <div class="col-lg-4">
+                    <h6>{{item.section}}</h6>
+                    <ul>
+                        @for (x of item.items; track $index) {
+    
+                            <li><a href="#">{{x.name}}</a></li>
+                        }
+                       
+                    </ul>
+                </div>  
+            }
+            
+        </div>
+    </div>
+        </div>
+    </footer>
+
+  
+    <div class="bottom-footer">
+        <div class="footer-container">
+            <div class="copyright">
+                <p>© Electro - All Rights Reserved</p>
+            </div>
+            <div class="payment-methods">
+                <img src="https://www.pymnts.com/wp-content/uploads/2014/03/Discover-logo-e1416429693676.jpg?w=700" alt="Discover">
+                <img src="https://cdn.freebiesupply.com/images/large/2x/mastercard-logo-png-transparent.png" alt="Mastercard">
+                <img src="https://www.citypng.com/public/uploads/preview/transparent-hd-paypal-logo-701751694777788ilpzr3lary.png" alt="PayPal">
+                <img src="https://vectopus.com/_next/image?url=https%3A%2F%2Fcdn.vectopus.com%2Fgetillustrations%2Ficons%2FEBC8B38023A8%2F6C294C56B5F7%2Ficons-skrill-logo-payment-method-finance-512.png&w=1920&q=75" alt="Skrill">
+                <img src="https://1000logos.net/wp-content/uploads/2021/11/VISA-logo-768x432.png" alt="Visa">
+            </div>
+        </div>
+    </div>
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+</body>
